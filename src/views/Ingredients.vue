@@ -16,6 +16,7 @@ onMounted(() => {
 
 const searchIngredients = computed(() => {
     if (!searchIngredients) return ingredients
+
     return ingredients.value.filter((i) => i.strIngredient.toLowerCase().includes(keyword.value.toLowerCase()))
 })
 
@@ -27,7 +28,7 @@ const searchIngredients = computed(() => {
         <h1 class="text-4xl font-bold mb-4"> Search Meals By Ingredients</h1>
     </div>
 
-    <!-- {{ ingredients }} -->
+    <!-- {{ ingredients }} -->  
       <div class="p-10">
             <input  type="text" v-model="keyword" class="rounded border-2 border-geay-200 w-full bg-white mb-5" placeholder="Enter Ingredient name"/>
       </div>

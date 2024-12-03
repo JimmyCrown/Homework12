@@ -11,7 +11,7 @@ const routes = [
   { path: '/Homework12', name: 'Home', component: HomePage },
   { path: '/Homework12/by-name/:name?', name: 'MealsByName', component: MealsByName },
   { path: '/Homework12/by-letter/:letter?', name: 'MealsByLetter', component: MealsByLetter },
-  { path: '/Homework12/by-ingredient', name: 'MealsByIngredients', component: MealsByIngredients },
+  { path: '/Homework12/by-ingredient/:ingredient?', name: 'MealsByIngredients', component: MealsByIngredients },
   { path: '/Homework12/meal/:id', name: 'MealDetails', component: MealDetails },
   { path: '/Homework12/ingredients', name: 'Ingredients', component: Ingredients },
   { path: '/other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
